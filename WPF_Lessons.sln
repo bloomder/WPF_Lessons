@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WPF_Lessons", "WPF_Lessons\WPF_Lessons.shproj", "{8C679DFF-BEBD-4A53-9BB5-8C9B4DAC413B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson6", "Lesson6", "{AA0F8A61-0994-4174-ADA3-34CB743650B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Work1", "Work1", "{D525E483-A7A6-49E7-9309-E6D04616A0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Label", "Label\Label.csproj", "{9B9E9295-A756-431D-A106-8F7B8AC180E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Work2", "Work2", "{8DA08E41-6213-4A3D-BCB3-4E41352D1175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBox", "TextBox\TextBox.csproj", "{66818958-2DA7-450B-AB6A-1FAC6BFDAAA1}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		WPF_Lessons\WPF_Lessons.projitems*{8c679dff-bebd-4a53-9bb5-8c9b4dac413b}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B9E9295-A756-431D-A106-8F7B8AC180E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9E9295-A756-431D-A106-8F7B8AC180E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9E9295-A756-431D-A106-8F7B8AC180E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9E9295-A756-431D-A106-8F7B8AC180E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66818958-2DA7-450B-AB6A-1FAC6BFDAAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66818958-2DA7-450B-AB6A-1FAC6BFDAAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66818958-2DA7-450B-AB6A-1FAC6BFDAAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66818958-2DA7-450B-AB6A-1FAC6BFDAAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D525E483-A7A6-49E7-9309-E6D04616A0DB} = {AA0F8A61-0994-4174-ADA3-34CB743650B2}
+		{9B9E9295-A756-431D-A106-8F7B8AC180E1} = {D525E483-A7A6-49E7-9309-E6D04616A0DB}
+		{8DA08E41-6213-4A3D-BCB3-4E41352D1175} = {AA0F8A61-0994-4174-ADA3-34CB743650B2}
+		{66818958-2DA7-450B-AB6A-1FAC6BFDAAA1} = {8DA08E41-6213-4A3D-BCB3-4E41352D1175}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EB065B0-E190-4679-BC09-D97636F2865E}
+	EndGlobalSection
+EndGlobal
