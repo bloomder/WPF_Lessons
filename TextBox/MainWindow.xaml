@@ -9,12 +9,27 @@
     <Grid Margin="5">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="2"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <TextBox Name="txt"
                  VerticalScrollBarVisibility="Auto"
-                 TextWrapping="WrapWithOverflow"/>
+                 TextWrapping="WrapWithOverflow"
+                 AcceptsReturn="True"
+                 SelectionChanged="txt_SelectionChanged"
+                 SpellCheck.IsEnabled="True">
+            Windows Presentation Foundation (WPF) is a graphical subsystem (similar to WinForms) by Microsoft for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0 in 2006. WPF uses DirectX and attempts to provide a consistent programming model for building applications. It separates the user interface from business logic, and resembles similar XML-oriented object models, such as those implemented in XUL and SVG.[1]
+            WPF employs XAML, an XML-based language, to define and link various interface elements.[2] WPF applications can be deployed as standalone desktop programs or hosted as an embedded object in a website. WPF aims to unify a number of common user interface elements, such as 2D/3D rendering, fixed and adaptive documents, typography, vector graphics, runtime animation, and pre-rendered media. These elements can then be linked and manipulated based on various events, user interactions, and data bindings.[3]
+        </TextBox>
+        <ScrollViewer Foreground="Blue"
+                      Grid.Row="1"
+                      Margin="0,10,0,5"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock>Current selection</TextBlock>
+                <TextBlock Name="txtSelection" TextWrapping="Wrap"/>
+            </StackPanel>            
+        </ScrollViewer>
     </Grid>
 </Window>
