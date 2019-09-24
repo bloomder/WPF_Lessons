@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CheckBoxList"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListBox Name="lst"
+                 SelectionChanged="lst_SelectionChanged"
+                 CheckBox.Click="lst_SelectionChanged">
+            <CheckBox Margin="3">Option 1</CheckBox>
+            <CheckBox Margin="3">Option 2</CheckBox>
+            <CheckBox Margin="3">Option 3</CheckBox>
+        </ListBox>
+        <StackPanel Grid.Row="1" Margin="0,10,0,0">
+            <TextBlock>Текущий выбор:</TextBlock>
+            <TextBlock Name="txtSelection" TextWrapping="Wrap"></TextBlock>
+            <Button Margin="0,10,0,0" Click="cmd_CheckAllItems">Проверить все элементы</Button>
+        </StackPanel>
     </Grid>
 </Window>
