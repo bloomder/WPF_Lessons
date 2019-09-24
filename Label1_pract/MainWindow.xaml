@@ -5,27 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Label1_pract"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="900">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
         <Border Margin="5" BorderBrush="Black" CornerRadius="5" BorderThickness="1"
                 Grid.Row="0" Grid.Column="0">
-            <Label Name="q">
-                Label Q
-            </Label>
-            <TextBox Name="textbox_q"></TextBox>
+            <StackPanel>
+                <Label Name="q" HorizontalAlignment="Left" Margin="5,5,5,1">
+                    Label Q
+                </Label>
+                <TextBox HorizontalAlignment="Stretch" Margin="5,0,5,5"/>
+            </StackPanel>
+        </Border>
+        <Border Margin="5" BorderBrush="Black" CornerRadius="5" BorderThickness="1"
+                Grid.Row="1" Grid.Column="0">
+            <StackPanel>
+                <Label Name="w" HorizontalAlignment="Left" Margin="5,5,5,1">
+                    Label W
+                </Label>
+                <TextBox HorizontalAlignment="Stretch" Margin="5,0,5,5"/>
+            </StackPanel>
         </Border>
     </Grid>
 </Window>
