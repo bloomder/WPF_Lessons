@@ -11,12 +11,5 @@ namespace Prcticum_DependencyProperty1
         {
             InitializeComponent();
         }
-        public string TextBlock_Text
-        {
-            set
-            {
-                TextBlock1.Text = value;
-            }
-        }
     }
 }
