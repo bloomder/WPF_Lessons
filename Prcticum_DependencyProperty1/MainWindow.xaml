@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Prcticum_DependencyProperty1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         xmlns:MyControls="clr-namespace:Prcticum_DependencyProperty1">
@@ -17,7 +16,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Background="AliceBlue"></StackPanel>
-        <Grid>
+        <Grid >
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -25,7 +24,7 @@
             </Grid.RowDefinitions>
             <TextBlock Name="TextBlock1"
                        Grid.Row="1" 
-                       Text="{Binding ElementName=Slider1, Path=Value}"
+                       Text="{Binding ElementName=SimplePropClass, Path=MyData}"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Stretch"
                        FontSize="50"
@@ -41,7 +40,8 @@
                      Grid.Row="1"
                      Grid.ColumnSpan="2"
                      Height="25"
-                     Margin="10"/>
+                     Margin="10"
+                     Value="{Binding ElementName=SimplePropClass, Path=MyData}"/>
         <MyControls:SimplePropClass
             x:Name="SimplePropClass"
             MyData="{Binding ElementName=Slider1, Path=Value}">

@@ -7,19 +7,13 @@ using System.Windows;
 
 namespace Prcticum_DependencyProperty1
 {
-    class SimplePropClass : FrameworkElement
+    public class SimplePropClass : FrameworkElement
     {
-        static FrameworkPropertyMetadata metadata = new FrameworkPropertyMetadata(
-            new PropertyChangedCallback(ChangedCallbackMethod),
-            new CoerceValueCallback(CoerceValueCallbackMethod));
-
         public static DependencyProperty MyDataProperty =
             DependencyProperty.Register(
                 "MyData",
                 typeof(int),
-                typeof(SimplePropClass),
-                metadata,
-                new ValidateValueCallback(ValidateValueCallbackMeyhod));
+                typeof(SimplePropClass));
 
         public int MyData
         {
@@ -31,23 +25,6 @@ namespace Prcticum_DependencyProperty1
             {
                 SetValue(MyDataProperty, value);
             }
-        }
-
-        private static bool ValidateValueCallbackMeyhod(object value)
-        {
-            if ((int)value < 0) return false;
-            return true;
-        }
-
-        private static object CoerceValueCallbackMethod(DependencyObject d, object baseValue)
-        {
-            if ((int)baseValue <= 100) return baseValue;
-            return 100;
-        }
-
-        private static void ChangedCallbackMethod(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            
         }
     }
 }
