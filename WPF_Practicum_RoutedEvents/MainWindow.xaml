@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_Practicum_RoutedEvents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Practicum_RoutedEvents"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500"
+        xmlns:myButton="clr-namespace:WPF_Practicum_RoutedEvents">
+    <Grid Background="Aqua">
+        <myButton:ExtraButton x:Name="ButtonMain"
+                              Margin="10"
+                              Padding="5"
+                              MyButtonClick="ExtraButton_MyButtonClick">
+            <StackPanel Orientation="Vertical">
+                <myButton:ExtraButton x:Name="Button1"
+                                      Width="100"
+                                      Height="50"
+                                      Margin="5"
+                                      MyButtonClick="ExtraButton_MyButtonClick"/>
+                <myButton:ExtraButton x:Name="Button2"
+                                      Width="100"
+                                      Height="50"
+                                      MyButtonClick="ExtraButton_MyButtonClick"/>
+            </StackPanel>
+        </myButton:ExtraButton>
+    </Grid>
+</Window>
